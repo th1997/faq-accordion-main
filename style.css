@@ -34,7 +34,7 @@ main{
     background-color: var(--White);
     border-radius: 10px 10px;
     padding: 30px;
-    max-width: 21rem;
+    max-width: 16rem;
 }
 
 .title_container{
@@ -47,7 +47,9 @@ main{
     max-width: 30px;
 }
 
-.question_container{ font-size: 1rem }
+.question_container{ 
+    font-size: 1rem;
+ }
 
 .question_container label, .Card_Content h1{ color: var(--Dark-purple) }
 
@@ -61,10 +63,13 @@ main{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    margin-top: 2em;
 }
 
 .question_container label:hover {
-    color: var(--Grayish-purple)
+    color: var(--Grayish-purple);
+    cursor: pointer
 }
 
 p{
@@ -73,6 +78,24 @@ p{
 }
 
 input[type=checkbox]{ display: none }
+
+.separation{ 
+    border-top: solid var(--Light-pink) 2px
+}
+
+.content .inner{
+    padding-bottom: 1em;
+    padding-top: 1em;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.30s ease-in-out;
+}
+
+input:checked + label + .content .inner {
+    height: auto;
+    opacity: 1;
+}
 
 footer { text-align: center }
 footer a { color: var(--footer-color) }
