@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Work Sans';
+    src: url('assets/fonts/WorkSans-VariableFont_wght.ttf') format('truetype');  
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-pink: hsl(275, 100%, 97%);
+    --Grayish-purple: hsl(292, 16%, 49%);
+    --Dark-purple: hsl(292, 42%, 14%);
+    --footer-color: hsl(228, 45%, 44%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--Light-pink);
+    background-image: url("/assets/images/background-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'Work Sans';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 5rem;
+}
+
+main{
+    background-color: var(--White);
+    border-radius: 10px 10px;
+    padding: 20px;
+    max-width: 21rem;
+}
+
+.title_container{
+    display: flex;
+    flex-direction: row;
+}
+
+.question_container label, .Card_Content h1{
+    color: var(--Dark-purple);
+    font-weight: 700;
+}
+
+p{
+    color: var(--Grayish-purple);
+}
+
+footer { text-align: center }
+footer a { color: var(--footer-color) }
