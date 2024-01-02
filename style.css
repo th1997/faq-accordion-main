@@ -73,7 +73,11 @@ main{
     cursor: pointer
 }
 
-p{
+.question_container label .icon_container.open img {
+    content: url('assets/images/icon-minus.svg');
+}
+
+.Card_Content p{
     color: var(--Grayish-purple);
     font-weight: 400;
 }
@@ -100,3 +104,12 @@ input:checked + label + .content .inner {
 
 footer { text-align: center }
 footer a { color: var(--footer-color) }
+
+@media screen and (min-width: 26.625rem) {
+    body{
+        background-image: url("/assets/images/background-pattern-desktop.svg");
+    }
+    main{
+        max-width: 35em;
+    }
+}
