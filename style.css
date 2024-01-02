@@ -108,8 +108,14 @@ footer a { color: var(--footer-color) }
 @media screen and (min-width: 26.625rem) {
     body{
         background-image: url("/assets/images/background-pattern-desktop.svg");
+        background-size: 100vw;
     }
+    
     main{
-        max-width: 35em;
+        max-width: 30em;
+    }
+
+    .Card_Content h1{ 
+        font-size: 3rem;
     }
 }
